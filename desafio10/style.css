@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android' ;
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    background-color: rgb(135, 223, 186);
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+    text-align: justify;
+    margin: 0px auto 0px auto;
+}
+
+header{
+    background-image: linear-gradient(to bottom, rgb(147, 212, 156), rgb(20, 75, 20));
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: rgba(17, 110, 48, 0.541);
+    padding: 4px 4px 0px 4px;
+    margin: 0px;
+    box-shadow: 5px 5px 15px rgba(12, 29, 12, 0.4);
+}
+
+nav > a{    
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    margin-right: 2px;
+}
+
+nav > a:hover{
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 3px;
+    font-weight: bolder;
+    color: gray;
+}
+
+
+main {
+    background-color: white;
+    border: 0;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: android;
+    text-align: center;
+    color: rgb(40, 126, 97);
+    
+}
+
+h2 {
+    background-image: linear-gradient(to right, rgb(140 213 166 / 50%), rgba(255, 255, 255, 0.041) );
+    margin: 14px;
+    text-indent: 10px;
+    padding: 0px 0px 0px 10px;
+    font-family: android;
+    color: rgb(40, 126, 97);
+    border-radius: 8px 0px 0px 8px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(40, 126, 97);
+    font-weight: bold;
+}
+
+a:hover{
+    padding: 0px;
+    margin: 3px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 5px;
+}
+
+img{
+    margin: auto;
+    padding: 0px;
+    border: 0px;
+    align-content:space-between;
+}
+
+.tpdestaque{
+    margin: 0px;
+    padding: 20px;
+    font-family: Bebas Neue;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    text-shadow: 2px 2px 2px rgba(18, 48, 18, 0.404);
+}
+
+.tpsub{
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    font-family: Bebas Neue;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+.txtdestaque{
+    color: rgb(40, 126, 97);
+    font-weight: bold;
+}
+
+.tbtitulo{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(29, 80, 71);
+    color: white;
+    font-weight: bolder;
+}
+
+.tbconteudo{
+    margin: 0px;
+    padding: 0px;
+    background-color: turquoise;
+    color: white;
+    border-radius: 5px 0px 0px 5px;
+}
