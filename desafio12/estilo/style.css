@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+:root{
+    --font-destaque: 'Hurricane';
+}
+body{
+    height: 96vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+}
+
+body a{
+    text-decoration: none;
+    color: rgb(118, 106, 172);
+    font-weight: bolder;
+}
+
+header{
+    
+    background-image: url('../imagens/topo1.png');
+    min-width: 800px;
+    max-width: 1300px;
+    /*background-size: cover;*/
+    background-position: center center;
+    /*border: 0px dashed rgba(15, 136, 184, 0);*/
+    border-radius: 10px;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--font-destaque);
+}
+
+main{
+    background-color: antiquewhite;
+    margin: auto;
+}
