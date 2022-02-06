@@ -2,16 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-weight: semi-bold;
+}
 
 :root{
     --font-destaque: 'Hurricane';
     --font-texto: 'Dancing Script';
 }
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
 body{
     height: 98vh;
     background-color: aqua;
@@ -62,7 +68,7 @@ section{
     padding-top: 10vh;/* usar o vh faz com que a rolagem vá diminuindo a distância conforme diminui a tela*/
     padding-bottom: 10vh;
     font-family: var(--font-texto);
-    font-size: 2em;
+    font-size: 5vw; /*vw -. se refere ao width? mas aqui ele diminui conforme mexe na viewport*/
     line-height: 1.5em;/* espaçamento entre as linhas*/
     padding-left: 30px; /*distância mínima da margem esquerda*/
 }
