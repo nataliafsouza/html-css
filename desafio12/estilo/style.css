@@ -2,39 +2,86 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 :root{
     --font-destaque: 'Hurricane';
+    --font-texto: 'Dancing Script';
 }
-body{
-    height: 96vh;
+*{
     margin: 0px;
     padding: 0px;
+}
+body{
+    height: 98vh;
     background-color: aqua;
 }
 
-body a{
+header, footer{
+    background-image: url('../imagens/topo1.png');
+    min-width: 800px;
+    max-width: 1300px;
+    text-align: center;
+}
+
+header{
+    /*background-size: cover;*/
+    background-position: center center;
+    /*border: 0px dashed rgba(15, 136, 184, 0);*/
+    border-radius: 10px;
+}
+
+header h1{
+    padding: 40px;
+    font-family: var(--font-destaque);
+    /* text-transform: uppercase;
+    Transforma todas as letras em maiúsculas */
+    font-variant: small-caps; /*transforma as letras em maiúsculas, mas as primeiras ficam em maiúsculas, enquanto que as outras ficam menores*/
+}
+
+header > p{
+    padding-bottom: 10px;
+}
+
+a{
     text-decoration: none;
     color: rgb(118, 106, 172);
     font-weight: bolder;
 }
 
-header{
-    
-    background-image: url('../imagens/topo1.png');
-    min-width: 800px;
-    max-width: 1300px;
-    /*background-size: cover;*/
-    background-position: center center;
-    /*border: 0px dashed rgba(15, 136, 184, 0);*/
-    border-radius: 10px;
-    text-align: center;
+a:hover{
+    background-color: blueviolet;
+    color: white;
 }
-
-header h1{
-    font-family: var(--font-destaque);
-}
-
 main{
     background-color: antiquewhite;
     margin: auto;
+}
+
+section{
+    padding-top: 10vh;/* usar o vh faz com que a rolagem vá diminuindo a distância conforme diminui a tela*/
+    padding-bottom: 10vh;
+    font-family: var(--font-texto);
+    font-size: 2em;
+    line-height: 1.5em;/* espaçamento entre as linhas*/
+    padding-left: 30px; /*distância mínima da margem esquerda*/
+}
+
+section.normal{
+    background-color: aliceblue;
+    color: black;
+}
+
+section.imagem{
+    background-color: gray;
+    color: black;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+footer{
+    padding: 30px;
+    background-position: center center;
 }
