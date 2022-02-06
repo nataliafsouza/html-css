@@ -40,6 +40,7 @@ header{
 header h1{
     padding: 40px;
     font-family: var(--font-destaque);
+    font-size: 5vw;
     /* text-transform: uppercase;
     Transforma todas as letras em maiúsculas */
     font-variant: small-caps; /*transforma as letras em maiúsculas, mas as primeiras ficam em maiúsculas, enquanto que as outras ficam menores*/
@@ -47,12 +48,15 @@ header h1{
 
 header > p{
     padding-bottom: 10px;
+    font-size: 3vw;
 }
 
 a{
+    padding: 5px;
     text-decoration: none;
     color: rgb(118, 106, 172);
     font-weight: bolder;
+    border-radius: 8px;
 }
 
 a:hover{
@@ -68,9 +72,13 @@ section{
     padding-top: 10vh;/* usar o vh faz com que a rolagem vá diminuindo a distância conforme diminui a tela*/
     padding-bottom: 10vh;
     font-family: var(--font-texto);
-    font-size: 5vw; /*vw -. se refere ao width? mas aqui ele diminui conforme mexe na viewport*/
+    font-size: 2em; /*vw -. se refere ao width? mas aqui ele diminui conforme mexe na viewport*/
     line-height: 1.5em;/* espaçamento entre as linhas*/
     padding-left: 30px; /*distância mínima da margem esquerda*/
+}
+
+section > p{
+    padding: 30px;
 }
 
 section.normal{
@@ -80,14 +88,34 @@ section.normal{
 
 section.imagem{
     background-color: gray;
-    color: black;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.547);
+    background-position: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     width: 400px;
     background-color: rgba(0, 0, 0, 0.384);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.445);
 }
+
+section#img1{
+    background-image: url('../imagens/background001.png');
+}
+
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+}
+
 footer{
     padding: 30px;
     background-position: center center;
+    
+}
+
+footer > p{
+    width: 400px;
+    position: absolute;
+    font-size: 2vw;
 }
